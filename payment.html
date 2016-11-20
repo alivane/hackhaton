@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+  <title>Titulo de la web</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/payment.css">  
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://material.io/icons/">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+</head>
+ 
+<body>
+    <header>
+       <h1>Datos para donacion</h1>
+    </header>
+    <section>
+<div class="container">
+         <!-- ESTRUCTURA FORMULARIO -->
+            <h1>Donar en Línea</h1>
+            <div class="row">
+               <div class="col-md-5 col-xs12">
+                  <!--FORM-CONTAINER-->
+                  <!--active-form es la clase que se debe ir agregando en los siguientes form-container para que esten activos-->
+                  <div class="form-container active-form">
+                     <div class="titulo-paso">Ingrese los datos</div>
+                     <h2 class="titulo-form">DATOS PERSONALES</h2>
+                     <form action="https://www.webpay.cl/portalpagodirecto/pages/index.jsf" method="post" id="form-paso-3">
+                        <div class="form-group">				   
+                           <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo (*)"required="required">
+                        </div>
+                        <div class="form-group">				    
+                           <input type="mail" class="form-control" id="email" name="email" placeholder="E-mail (*)"required="required">
+                        </div>
+                        <div class="form-group">				    
+                           <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono (*)" onkeypress="return isNumber(event);" maxlength="10"required="required">
+                        </div>
+                        <input type="hidden" name="producto" id="producto" value="Donación" />
+                        <!--<button type="button" class="btn btn-default" onClick="validarForm1();" id="boton1">SIGUIENTE <i class="glyphicon glyphicon-menu-right"></i></button>-->
+                  </div>
+                  <!--/FORM-CONTAINER-->
+               </div>
+               <div class="col-md-2 col-xs12"></div>
+               <div class="col-md-5 col-xs12">
+                  <!--FORM-CONTAINER-->
+                  <div class="form-container" id="paso3">
+                     <div class="titulo-paso"></div>
+                     <h2 class="titulo-form">TU DONACIÓN <span>(Sólo se cobrará una vez)</span>	</h2>
+                        <div class="checkbox">
+                           <div class="radio">
+                              <label>Ingrese Monto
+                              <input type="text" name="monto_donacion" id="monto_donacion_otro" onkeypress="return isNumber(event);" required>
+<input type="hidden" name="id_persona" id="id_persona" value="" />
+                                 <div class="webpay-icons">
+                                    <img src="http://www.fundacionlasrosas.cl/wp-flrosas/wp-content/themes/flr/images/icons-webpay.png" alt="">
+                                 </div>
+                              </label>
+                           </div>
+                        </div>
+                        <button type="sumbit" name="boton3" class="btn btn-default">DONAR <i class="glyphicon glyphicon-menu-right"></i></button>
+                     </form>
+                    
+  </div>
+                  <!--/FORM-CONTAINER-->
+               </div>
+            </div>
+         <!-- / ESTRUCTURA FORMULARIO -->
+      </div>
+      
+</body>
+</html>
