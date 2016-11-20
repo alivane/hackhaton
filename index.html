@@ -13,25 +13,105 @@
  
 <body>
     <header>
-       <h1>Mi sitio web</h1>
-       <p>Mi sitio web creado en html5 </p>
-       <h1>el font size-remoto:" font-family: 'Roboto', sans-serif;"</h1>
-       <i class="material-icons">pregnant_woman</i>
-       <i class="material-icons">&#xE91E;</i>
+      <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      <li><a href="#">Momi</a></li>
+        <li><a href="profile.html">Perfiles</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <button type="submit" class="btn donar">Donar</button>
+        <button type="submit" class="btn iniciar">Iniciar Seccion</button>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
     </header>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="img/carucel1.jpg" alt="Chania">
+              </div>
+
+              <div class="item">
+                <img src="img/carucel2.jpg" alt="Chania">
+              </div>
+            </div>
+
+          </div>
     <section>
-       <article>
-           <h2>Titilo de contenido<h2>
-           <p> Contenido (ademas de imagenes, citas, videos etc.) </p>
-       </article>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, earum iure quas nesciunt temporibus doloremque, illo amet distinctio eligendi eaque! Reprehenderit deleniti esse natus qui tenetur sequi officia magnam aperiam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis praesentium optio iure, harum velit porro, repudiandae deleniti officia alias eum consequatur dolorum expedita eos corrupti laborum debitis fugit fugiat accusantium.</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <aside>
-       <h3>Titulo de contenido</h3>
-           <p>contenido</p>
-    </aside>
+    <section id= "estadistica">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <div class="cuadro">
+              <span>2,7%</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus natus rerum totam accusantium maxime eos recusandae, facere, temporibus provident ab minus non eveniet libero sint rem beatae est fugit dignissimos.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="cuadro">
+              <span>4,7%</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus natus rerum totam accusantium maxime eos recusandae, facere, temporibus provident ab minus non eveniet libero sint rem beatae est fugit dignissimos.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="cuadro">
+              <span>3,2%</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus natus rerum totam accusantium maxime eos recusandae, facere, temporibus provident ab minus non eveniet libero sint rem beatae est fugit dignissimos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="perfiles">
+       <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12 imagen">
+            <img src="img/perfil1.jpg">
+          </div>
+          <div class="col-sm-4 col-xs-12 imagen">
+            <img src="img/perfil2.jpg">
+          </div>
+          <div class="col-sm-4 col-xs-12 imagen">
+            <img src="img/perfil3.jpg">
+          </div>
+        </div> 
+       </div> 
+    </section>
     <footer>
-        Creado por mi el 2011
+        &copy 2016
     </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
