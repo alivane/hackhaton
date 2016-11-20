@@ -13,24 +13,149 @@
  
 <body>
     <header>
-       <h1>Mi sitio web</h1>
-       <p>Mi sitio web creado en html5 </p>
-       <h1>el font size-remoto:" font-family: 'Roboto', sans-serif;"</h1>
-       <i class="material-icons">pregnant_woman</i>
-       <i class="material-icons">&#xE91E;</i>
+       <h1>Pago con tarjeta</h1>
     </header>
     <section>
        <article>
-           <h2>Titilo de contenido<h2>
-           <p> Contenido (ademas de imagenes, citas, videos etc.) </p>
+         <form name="form1" method="post" action="Pago.php">
+         <fieldset>
+
+<!-- Form Name -->
+<legend></legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="CardHolderID">Rut</label>  
+  <div class="col-md-8">
+    <p>
+      <input id="CardHolderID" name="CardHolderID" type="text" placeholder="Ingrese Numero de Rut" class="form-control input-md" required>
+    </p>
+    <p>&nbsp; </p>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="CardHolderID">Banco</label>  
+  <div class="col-md-8">
+    <p>
+      <input id="CardHolderID" name="CardHolderID" type="text" placeholder="Ingrese Banco" class="form-control input-md" required>
+    </p>
+    <p>&nbsp; </p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="CardHolder">Nombre</label>  
+  <div class="col-md-8">
+  <input id="CardHolder" name="CardHolder" type="text" placeholder="Nombres Apellidos" class="form-control input-md" required>
+  <span class="help-block">Ingrese Nombres y Apellidos igual que aparece en su tarjeta</span>  
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="tipo_tarjeta">Seleccione Tipo de Tarjeta</label>
+  <div class="col-md-8">
+    <p>
+      <select id="tipo_tarjeta" name="tipo_tarjeta" class="form-control">
+        <option value="VISA">VISA</option>
+        <option value="MASTER CARD">MASTER CARD</option>
+        <option value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
+      </select>
+    </p>
+    <p>&nbsp; </p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="CardNumber">Nro. Tarjeta</label>  
+  <div class="col-md-8">
+    <input id="CardNumber" name="CardNumber" type="text" placeholder="Ingrese Numero de tarjeta" class="form-control input-md" required>
+  <span class="help-block">Numero de la tarjeta de crédito, sin espacios ni separadores.</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ExpirationDate">Fecha de Vencimiento</label>  
+  <div class="col-md-8">
+    <p>
+      <input id="ExpirationDate" name="ExpirationDate" type="text" placeholder="MM/YYYY" class="form-control input-md" required>
+      <span class="help-block">Fecha de expiración de la tarjeta en el formato mostrado en la misma MM/YYYY. Por Ejemplo: 10/2016.</span></p>
+    <p>&nbsp;</p>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="cvc">CVC</label>  
+  <div class="col-md-8">
+    <p>
+      <input id="cvc" name="cvc" type="text" placeholder="CVC" class="form-control input-md" required>
+      <span class="help-block">Ingrese : Código secreto de la Tarjeta de crédito, localizada en el dorso</span></p>
+    <p>&nbsp;</p>  
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="State">Region</label>
+  <div class="col-md-8">
+    <p>
+      <input id="cvc2" name="cvc2" type="text" placeholder="Ingrese Region" class="form-control input-md" required>
+    </p>
+    <p>&nbsp; </p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="City">Comuna</label>  
+  <div class="col-md-8">
+  <input id="City" name="City" type="text" placeholder="Ingrese Comuna" class="form-control input-md">
+  <span class="help-block">.</span>  
+  </div>
+</div>
+
+<!-- Text input--><!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Address">Direccion</label>  
+  <div class="col-md-8">
+    <p>
+      <input id="Address" name="Address" type="text" placeholder="Direccion" class="form-control input-md">
+    </p>
+    <p>&nbsp; </p>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Amount">Monto</label>  
+  <div class="col-md-8">
+    <p>
+      <input id="Amount" name="Amount" type="text" placeholder="Monto" class="form-control input-md" required>
+    </p>
+    <p>&nbsp; </p>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton">Procesar Pago</label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-success">Pagar</button>
+  </div>
+</div>
+
+</fieldset>
+         </form>
+         <p>&nbsp;</p>
        </article>
     </section>
-    <aside>
-       <h3>Titulo de contenido</h3>
-           <p>contenido</p>
-    </aside>
     <footer>
-        Creado por mi el 2011
+        2016
     </footer>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
