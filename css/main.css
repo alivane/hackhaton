@@ -9,6 +9,7 @@
 	height: 600px;
 }
 .cuadro{
+	height: 300px;
 	padding: 50px;
 	background-color: white;
 	text-align: center;
@@ -62,4 +63,7 @@ nav{
 	background-color: #6dd5b4;
 	color: white;
 	border-radius: 50px;
+}
+#letras{
+	font-size: 25px;
 }
